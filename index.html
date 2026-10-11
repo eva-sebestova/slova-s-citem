@@ -163,7 +163,34 @@
     <p class="eyebrow">Napište mi</p>
     <h2>Potřebujete najít správná slova?</h2>
     <p>Ať už potřebujete text opravit, vytvořit od začátku, nebo citlivě zpracovat vzpomínky pro smuteční projev, napište mi. Společně najdeme vhodnou podobu.</p>
-    <a class="btn btn-light" href="mailto:eva@slovascitem.cz" target="_blank" rel="noopener noreferrer">✉ Nezávazně poptat službu →</a>
+    <form class="contact-form" action="https://formsubmit.app/f/jwqg4cdmm2" method="POST">
+      <input type="hidden" name="_subject" value="Nová poptávka – SLOVA S CITEM">
+      <div class="form-field">
+        <label for="poptavka-jmeno">Jméno</label>
+        <input id="poptavka-jmeno" type="text" name="name" autocomplete="name" placeholder="Vaše jméno" required>
+      </div>
+      <div class="form-field">
+        <label for="poptavka-email">E-mail</label>
+        <input id="poptavka-email" type="email" name="email" autocomplete="email" placeholder="vas@email.cz" required>
+      </div>
+      <div class="form-field">
+        <label for="poptavka-sluzba">O jakou službu máte zájem?</label>
+        <select id="poptavka-sluzba" name="service" required>
+          <option value="" selected disabled>Vyberte službu</option>
+          <option>Korektura textu</option>
+          <option>Text na zakázku</option>
+          <option>Smuteční projev</option>
+          <option>Osobní text</option>
+          <option>Jiná služba / nejsem si jistý/á</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="poptavka-zprava">Vaše zpráva</label>
+        <textarea id="poptavka-zprava" name="message" rows="5" placeholder="Napište stručně, s čím potřebujete pomoci…" required></textarea>
+      </div>
+      <button class="btn btn-light" type="submit">✉ Odeslat nezávaznou poptávku →</button>
+      <p class="form-note">Odesláním formuláře mi zašlete údaje potřebné k vyřízení vaší poptávky.</p>
+    </form>
   </div>
 </section>
 
@@ -172,7 +199,7 @@
 <footer id="kontakt" class="footer">
   <div class="container footer-grid">
     <div><strong>SLOVA S CITEM</strong><p>Eva Šebestová</p></div>
-    <div><p>Korektury • texty • smuteční projevy</p><a href="mailto:eva@slovascitem.cz" target="_blank" rel="noopener noreferrer">eva@slovascitem.cz</a></div>
+    <div><p>Korektury • texty • smuteční projevy</p><a href="mailto:eva@slovascitem.cz">eva@slovascitem.cz</a></div>
     <div><p>© 2026 Eva Šebestová</p></div>
   </div>
 </footer>
